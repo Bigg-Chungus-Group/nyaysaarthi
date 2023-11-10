@@ -1,0 +1,23 @@
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .main-content{
+    width: 50%;
+    padding: 0px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .main-image{
+    width: 50%;
+}
+
+.main-image .image{
+    height: 100vh;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
