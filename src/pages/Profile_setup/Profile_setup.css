@@ -65,13 +65,16 @@ body{
     padding: 0px 40px;
 }
 
-.profile_set_up .profile .right_profile .rr1{
+.profile_set_up .profile .rr1{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;  
 }
 
 .profile_set_up .profile .right_profile .rr2{
     margin-top: 60px; 
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile_set_up .profile .right_profile .rr3{
@@ -93,4 +96,16 @@ body{
 
 .profile_set_up .profile .right_profile .rr5 .btn{
     padding: 0px 60px;
+}
+
+.profile_set_up .map {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.profile_set_up #map {
+    margin-top: 20px;
+    width: 100%;
 }
