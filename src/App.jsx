@@ -4,12 +4,11 @@ import Signup from './pages/Signup/Signup';
 import Profile_setup from './pages/Profile_setup/Profile_setup';
 import { ToastContainer } from "react-toastify";
 import "../firebaseConfig";
-import  Navbar  from "./Components/Navbar.js/Navbar";
+import  Navbar  from "./Components/Navbar/Navbar";
 
 function App() {
   return (
    <Router>
-   <Navbar/>
       <Routes>
         <Route path="/" element={<h1>Hello</h1>} />
         <Route path='/login' element={<Login/>} />
