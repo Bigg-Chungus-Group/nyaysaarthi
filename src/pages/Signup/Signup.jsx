@@ -11,10 +11,19 @@ import {
   getAuth,
   linkWithPhoneNumber,
 } from "firebase/auth";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  setDoc,
+  doc,
+} from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import { app } from "../../../firebaseConfig";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const db = getFirestore(app);
 
   const [isbtnLoading, setIsbtnLoading] = React.useState(false);
   const [isbtnLoading2, setIsbtnLoading2] = React.useState(false);
@@ -91,13 +100,17 @@ const Signup = () => {
     ) {
       setIsbtnLoading(true);
       createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          const user = userCredential.user;
+        .then(async (userCredential) => {
+          await setDoc(doc(db, "users", userCredential.user.uid), {
+            profileSetup: false,
+          });
+
           setIsbtnLoading(false);
           setStep(2);
         })
         .catch((error) => {
           toast.error("Something went wrong. Does this email already exist?");
+          console.log(error);
           setIsbtnLoading(false);
         });
     }
@@ -129,6 +142,13 @@ const Signup = () => {
           setDisabled(true);
         })
         .catch((error) => {
+          if (error.code === "auth/account-exists-with-different-credential") {
+            toast.error(
+              "This phone number is already registered with another account"
+            );
+            return;
+          }
+
           toast.error("Something went wrong. Please try again");
           console.log(error);
         })
@@ -157,7 +177,7 @@ const Signup = () => {
           const user = result.user;
           toast.success("Account created successfully");
           setIsbtnLoading(false);
-          navigate("/profile");
+          navigate("/profile/setup");
         })
         .catch((error) => {
           if (error.code === "auth/invalid-verification-code") {

@@ -5,6 +5,7 @@ import Profile_setup from './pages/Profile_setup/Profile_setup';
 import { ToastContainer } from "react-toastify";
 import "../firebaseConfig";
 import  Navbar  from "./Components/Navbar/Navbar";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Route path="/" element={<h1>Hello</h1>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>}/>
-        <Route path="/profile" element={<Profile_setup/>}/>
+        <Route path="/profile/setup" element={<Profile_setup/>}/>
+        <Route path="/loader" element={<Loader/>}/>
       </Routes>
       <ToastContainer
         position="bottom-right"
