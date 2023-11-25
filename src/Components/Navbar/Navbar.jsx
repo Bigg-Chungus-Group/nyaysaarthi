@@ -14,7 +14,7 @@ import {
 import logo from "../../assets/navlogo.svg";
 
 const Navbar = () => {
-  const avatarSrc = "https://i.pravatar.cc/150?u=a042581f4e29026704d";
+  // const avatarSrc = "https://i.pravatar.cc/150?u=a042581f4e29026704d";
   return (
     <div className="navbar">
       <div>

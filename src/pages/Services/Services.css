@@ -1,0 +1,88 @@
+.service{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F3ECF9;
+    height: 100vh;
+}
+
+.service1{
+    width: 20%;
+}
+
+.service1 .service-list{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 5px 20px -14px rgba(0, 0, 0, 0.75);
+}
+
+.service1 .service-list div{
+    margin-top: 5px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.service1 .service-request{
+    border: 2px solid #7828C8;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    color: #7828C8;
+    text-align: center;
+}
+
+.service2{
+    height: 20px;
+    background-color: greenyellow;
+    width: 55%;
+}
+
+.service3{
+    height: 20px;
+    width: 20%;
+}
+
+.service3 .my-service-request{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -14px rgba(0, 0, 0, 0.75);
+}
+
+.service3 .my-service-request .request-heading{
+    background-color: #7828C8;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.service3 .my-service-request .request-list{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service3 .service-requestor{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 20px -14px rgba(0, 0, 0, 0.75);
+}
+
+.service3 .service-requestor .service-requestor-heading{
+    font-size: 20px;
+    color: #7828C8;
+    padding: 10px;
+}
+
+.service3 .service-requestor .description{
+    background-color: #F9F2FF;
+    padding: 10px 30px;
+}
+
+.service3 .service-requestor .btn{
+    margin: 10px 70px;
+}
