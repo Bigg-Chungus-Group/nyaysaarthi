@@ -1,6 +1,7 @@
 // import React from 'react'
 import "./Services.css"
-import {Button} from "@nextui-org/react";
+import {Button,Divider} from "@nextui-org/react";
+
 const Services = () => {
     return (
         <>
@@ -22,7 +23,59 @@ const Services = () => {
 
                 </div>
 
-                <div className="service2"></div>
+                <div className="service2">
+                    <div className="selectors">
+                        huii
+                    </div>
+                    <div className="cards">
+                        <div className="card1">
+                            <div className="name">Aarav Patel</div>
+                            <div className="service-name">Service Name</div>
+                            <div className="status">
+                                <div className="availablility">
+                                    Available
+                                </div>
+                                <div className="rating-review">
+                                    <div><span>4.7</span> (1k Review)</div>
+                                </div>
+                            </div>
+
+                                <Divider style={{marginTop:'20px'}}/>
+
+                                <p>
+                                    <span>service description: </span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            <div className="request">
+                                minimum service price <Button color="secondary">request service</Button>
+                            </div>
+                        </div>
+                        <div className="card1">
+                            <div className="name">Aarav Patel</div>
+                            <div className="service-name">Service Name</div>
+                            <div className="status">
+                                <div className="availablility">
+                                    Available
+                                </div>
+                                <div className="rating-review">
+                                    <div><span>4.7</span> (1k Review)</div>
+                                </div>
+                            </div>
+
+                                <Divider style={{marginTop:'20px'}}/>
+
+                                <p>
+                                    <span>service description: </span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            <div className="request">
+                                minimum service price <Button color="secondary">request service</Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="service3">
                     <div className="my-service-request">
