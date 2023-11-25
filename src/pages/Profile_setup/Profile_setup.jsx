@@ -20,7 +20,7 @@ import {
   useDisclosure,
   Slider,
 } from "@nextui-org/react";
-import AvatarEditor from "react-avatar-editor";
+// import AvatarEditor from "react-avatar-editor";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { app } from "../../../firebaseConfig";
 import { updateDoc, getFirestore, getDoc, doc } from "firebase/firestore";
