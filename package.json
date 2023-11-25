@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@nextui-org/react": "^2.2.9",
     "firebase": "^10.6.0",
     "firebase-tools": "^12.8.1",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-avatar-editor": "^13.0.0",
     "react-dom": "^18.2.0",
