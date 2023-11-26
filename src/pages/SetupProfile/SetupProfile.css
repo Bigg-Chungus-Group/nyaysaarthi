@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.setupProfile {
+  background-color: #f9f2ff;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/layered-steps-bg-blur.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.setupProfile .select__options {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  gap: 20px;
+  box-shadow: 0 0 20px 1px #0000000a;
+}
+
+.setupProfile .select__options i {
+  font-size: 50px;
+  color: #ccc;
+}
+
+.setupProfile .select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fdfcfd;
+  box-shadow: 0 0 20px 1px #00000076;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.setupProfile .select__options:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.setupProfile .provider, .setupProfile .license, .setupProfile .location, .setupProfile .pfp {
+  background-color: #fdfcfd;
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 1px #00000076;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.setupProfile .license label {
+  margin: 10px 0;
+  background-color: #F4F4F5;
+  height: 56px;
+  width: 200px;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  color: #71717A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.setupProfile .pfp .img-overlay {
+  position: absolute;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: rgba(211, 211, 211, 0.618);
+  border-radius: 50%;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.img-wrapper:hover .img-overlay {
+  opacity: 1;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 50%;
+}

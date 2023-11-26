@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+  import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Profile_setup from "./pages/Profile_setup/Profile_setup";
@@ -9,6 +9,7 @@ import Services from "./pages/Services/Services"
 import Privacy from "./pages/Privacy/Privacy";
 import Tos from "./pages/Tos/Tos";
 import Home from "./pages/Home/Home";
+import SetupProfile from "./pages/SetupProfile/SetupProfile";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/profile/setup" element={<Profile_setup />} />
+        <Route path="/profile/setup" element={<SetupProfile />} />
         <Route path="/service" element={<Services/>}></Route>
         <Route path="privacy" element={<Privacy />} />
         <Route path="tos" element={<Tos />} />

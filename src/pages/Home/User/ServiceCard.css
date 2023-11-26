@@ -1,0 +1,84 @@
+.service2{
+    width: 100%;
+}
+
+.service2 .selectors{
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 5px 20px -20px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+
+.service2 .cards{
+    margin-top: 20px;
+    background-color: #FDFBFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 20px -14px rgba(0, 0, 0, 0.75);
+    padding: 20px 60px;
+    overflow-y: scroll;
+    height: 80vh;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.service2 .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+.service2 .cards .card1{
+    background-color: white;
+    box-shadow: 0px 5px 20px -14px rgba(0, 0, 0, 0.75);
+    border: 1px solid #D6ACFF;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.service2 .cards .card1 .name{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.service2 .cards .card1 .service-name{
+    font-size: 32px;
+    font-weight: bold;
+    color: #7828C8;
+}
+
+.service2 .cards .card1 .status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service2 .cards .card1 .availablility{
+    color: #17C964;
+    background-color: #E8FAF0;
+    padding: 0px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.service2 .cards .card1 .rating-review div span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.service2 .cards .card1 p{
+    margin-top: 10px;
+}
+
+.service2 .cards .card1 p span{
+    font-weight: 500;
+}
+
+.service2 .cards .card1 .request{
+    border: 2px solid #7828C8;
+    width: fit-content;
+    padding-left: 20px;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
