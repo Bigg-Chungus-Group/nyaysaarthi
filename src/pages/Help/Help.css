@@ -1,0 +1,24 @@
+.help .text {
+  background-image: url("../../assets/textbg.svg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  text-align: center;
+}
+
+.help {
+  background-color: #fefcf2a8;
+  overflow: auto;
+}
+
+.help .link {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.help .link:hover {
+  color: #000000;
+  text-decoration: none;
+}
