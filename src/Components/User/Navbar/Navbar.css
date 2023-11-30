@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 10px 0px;
+  box-shadow: 2px 2px 14px -12px rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 10vh;
+}
+
+.navbar .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .features .graduation i,
+.navbar .features .message i,
+.navbar .features .bell i {
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar .features .graduation,
+.navbar .features .message,
+.navbar .features .bell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .icon {
+  color: gray;
+}

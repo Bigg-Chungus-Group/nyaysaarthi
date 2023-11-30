@@ -7,16 +7,16 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBxvf1tDK26vnPZGMtrZr8UkqL6wX-h3yw",
-  authDomain: "sih-2023-400407.firebaseapp.com",
-  databaseURL: "https://sih-2023-400407-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "sih-2023-400407",
-  storageBucket: "sih-2023-400407.appspot.com",
-  messagingSenderId: "244030468178",
-  appId: "1:244030468178:web:2dc60bfba9e3479dcfaf8b",
-  measurementId: "G-FGEGVQT27S"
+  apiKey: import.meta.env.VITE_FB_API_KEY,
+  authDomain: import.meta.env.VITE_FB_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FB_DATABASE_URL,
+  projectId: import.meta.env.VITE_FB_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FB_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FB_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FB_APP_ID,
+  measurementId: import.meta.env.VITE_FB_MEASUREMENT_ID
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app); // eslint-disable-line no-unused-vars
