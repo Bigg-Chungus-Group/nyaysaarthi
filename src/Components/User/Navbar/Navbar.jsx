@@ -10,11 +10,13 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from "@nextui-org/react";
+import { useNavigate } from "react-router-dom";
 
 import logo from "../../../assets/navlogo.svg";
 
 const Navbar = () => {
   // const avatarSrc = "https://i.pravatar.cc/150?u=a042581f4e29026704d";
+  const navigate = useNavigate();
   return (
     <div className="navbar">
       <div>
@@ -36,6 +38,7 @@ const Navbar = () => {
               label: "text-black/50 dark:text-white/90 input",
             }}
             placeholder="Type to search..."
+            aria-label="Search"
             startContent={<i className="fa-solid fa-magnifying-glass"></i>}
           />
         </div>
@@ -45,6 +48,7 @@ const Navbar = () => {
             defaultSelectedKeys={["dadar"]}
             style={{ width: "200px", borderRadius: "10px" }}
             startContent={<i className="fa-solid fa-location-dot"></i>}
+            aria-label="Select a location"
           >
             <SelectItem key="dadar" value="dadar">
               Dadar,Mumbai
@@ -57,6 +61,7 @@ const Navbar = () => {
             label="Services"
             className="max-w-xs"
             style={{ width: "200px" }}
+            aria-label="Select a service"
           >
             <SelectItem key="dadar" value="dadar">
               Dadar, Mumbai
@@ -68,7 +73,7 @@ const Navbar = () => {
       <div style={{ display: "flex" }}>
         <div className="features" style={{ marginRight: "20px" }}>
           <div className="message">
-            <i className="fa-solid fa-message icon" style={{fontSize: "15px"}}></i>
+            <i className="fa-solid fa-message icon" style={{fontSize: "15px"}} onClick={() => navigate("/messages")}></i>
           </div>
           <div className="bell">
             <i className="fa-solid fa-bell icon" style={{fontSize: "18px"}}></i>

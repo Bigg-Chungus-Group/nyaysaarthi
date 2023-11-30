@@ -10,6 +10,8 @@ import Privacy from "./pages/Privacy/Privacy";
 import Tos from "./pages/Tos/Tos";
 import Home from "./pages/Home/Home";
 import SetupProfile from "./pages/SetupProfile/SetupProfile";
+import Help from "./pages/Help/Help";
+import Messages from "./pages/Messages/Messages";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path="/profile/setup" element={<SetupProfile />} />
         <Route path="/service" element={<Services/>}></Route>
         <Route path="privacy" element={<Privacy />} />
-        <Route path="tos" element={<Tos />} />
+        <Route path="/tos" element={<Tos />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/messages" element={<Messages/>} />
       </Routes>
       <ToastContainer position="bottom-right" newestOnTop theme="light" />
     </Router>
